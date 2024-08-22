@@ -4,7 +4,7 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 
 uses(RefreshDatabase::class);
 
-it('has products browse route')
+it('has products index/browse route')
     ->get('/api/v1/products')
     ->assertStatus(200);
 
