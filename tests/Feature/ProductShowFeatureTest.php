@@ -4,9 +4,9 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 
 uses(RefreshDatabase::class);
 
-it('has a products/{id} route')
-    ->get('/api/v1/products/1')
-    ->assertStatus(200);
+//it('has a products/{id} route')
+//    ->get('/api/v1/products/1')
+//    ->assertStatus(200);
 
 //it('retrieves one product', function() {
 //

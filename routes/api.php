@@ -10,9 +10,9 @@ Route::group(['prefix' => 'v1'], function () {
     Route::apiResource('/products', ProductController::class)
         ->only(['index', 'show']);
     // only allow authenticated users to access create, update and delete
-    // Route::apiResource('/products', ProductController::class)
-    //     ->only(['create', 'update','delete'])
-    //     ->middleware(['auth:sanctum']);
+     Route::apiResource('/products', ProductController::class)
+         ->only(['create', 'update','delete'])
+         ->middleware(['auth:sanctum']);
 
 });
 
